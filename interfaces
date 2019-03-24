@@ -1,0 +1,41 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug eth0
+iface eth0 inet dhcp
+allow-hotplug eth1
+iface eth1 inet dhcp
+allow-hotplug eth2
+iface eth2 inet dhcp
+allow-hotplug eth3
+iface eth3 inet dhcp
+allow-hotplug eth4
+iface eth4 inet dhcp
+
+
+
+
+
+
+#auto  enp123
+#iface enp123 inet manual
+
+#auto bro
+#auto br0  inet static
+#             address 172.19.20.33
+#             netmask 255.255.255.0
+#             gateway 172.19.20.1
+#             netwok 172.19.20.1
+#             broadcast 172.19.20.255
+#             bridge_ports  enp123
+#             bridge_stp off
+#             bridge_fd 0
+#             bridge_maxwait 0
+#             bridge_maxage 12
